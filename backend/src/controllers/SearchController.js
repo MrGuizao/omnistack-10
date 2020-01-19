@@ -7,7 +7,21 @@ module.exports = {
 
           const techsArray = parseStringAsArray(techs);
 
-          return res.json({ devs: [] });
+          const devs = await Dev.find({
+               techs: {
+                    $in: techsArray
+               },
+               location: {
+                    $near: {
+                         $geometry: {
+                              type: "Point",
+                              coordinates: [longitude, latitude]
+                         },
+                         $maxDistance: 10000,
+                    },
+               },
+          });
+          return res.json({ devs });
      },
-     async store(req, res) {}
+     // async store(req, res) {}
 };
