@@ -21,7 +21,7 @@ button {
 }
 
 #app {
-     max-width: 1200px;
+     max-width: 85%;
      margin: 0 auto;
      padding: 60px 30px;
      display: flex;
@@ -45,10 +45,10 @@ button {
           width: 100%;
      }
 }
-@media(max-width: 650px){
-  main ul{
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 650px) {
+     main ul {
+          grid-template-columns: 1fr;
+     }
 }
 /* MEDIA QUERIES */
 /* MEDIA QUERIES */
@@ -58,7 +58,7 @@ button {
 /* ASIDE */
 
 aside {
-     width: 320px;
+     width: 400px;
      border-radius: 4px;
      padding: 30px 20px;
      background-color: #fff;
