@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import api from "./services/api";
-
 import Form from "./components/devForm/Form";
 import Dev from "./components/devs/Dev";
 
